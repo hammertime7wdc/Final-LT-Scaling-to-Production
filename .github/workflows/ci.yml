@@ -32,6 +32,6 @@ jobs:
       - name: Install Railway CLI
         run: npm install -g @railway/cli
       - name: Deploy to Railway
-        run: railway up --service flask-cicd
+        run: railway up --detach --service Final-LT-Scaling-to-Production
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
